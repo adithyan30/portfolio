@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skill</title>
+    <link rel="stylesheet" href="C:\Users\selva\Desktop\adith\projects\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:'Poppins', sans-serif ;
+            box-sizing: border-box;
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #191919;
+            
+        }
+       
+        .skills{
+           
+            width: 100%;
+            border: 2px solid gold;
+            border-radius: 20px;
+            max-width: 700px;
+            padding: 0 30px ;
+           
+        }
+        h2{
+            color: white;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            padding-left: 200px;
+        }
+        .skill-name{
+            font-size: 18px;
+            font-weight: 700;
+            color: white;
+            margin: 20px 0;
+        }
+        .skill-bar{
+            height: 14px;
+            background: #282828; ;
+            border-radius: 3px;
+        }
+        .skill-per{
+            height: 14px;
+            background: orangered;
+            border-radius: 3px;
+            position: relative;
+        }
+        .skill-per::before{
+            content: attr(per);
+            position: absolute;
+            padding: 4px 6px;
+            background: white;
+            border-radius: 4px;
+            font-size: 12px;
+            top: -35px;
+            right: 0;
+        }
+        button{
+            justify-content: center;
+            background: orange;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    
+    <div class="skills">
+        <h2>my skills</h2>
+        <div class="skill">
+            <div class="skill-name">HTML</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="85%" style="max-width: 85%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">CSS</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="80%" style="max-width: 80%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">JAVASCRIPT</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="60%" style="max-width: 60%;"></div>
+            </div>
+        </div>
+        <button type="button"><a href="protfoil.html">Home</a></button>
+    </div>
+    
+</body>
+</html>
